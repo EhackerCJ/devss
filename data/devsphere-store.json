@@ -1,0 +1,954 @@
+{
+  "profiles": [
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "email": "supreme@devsphere.io",
+      "username": "supreme",
+      "display_name": "rip_supreme__d.e.v(Owner)",
+      "avatar_url": "",
+      "bio": "Supreme Owner & Sovereign of DevSphere Platform. Absolute platform authority.\n\n\n\n\"\"'Website=== ayushzz.vercel.app\n\"\"\"Github=== @EhackerCJ",
+      "links": [
+        "https://devsphere.io",
+        "https://github.com"
+      ],
+      "platform_role": "SUPREME_OWNER",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "supreme_dev",
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-10-29T10:37:42.340Z",
+      "banner_url": ""
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000002",
+      "email": "admin@devsphere.io",
+      "username": "alex_admin",
+      "display_name": "Alex Admin",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "bio": "Platform Administrator & Infrastructure Architect.",
+      "links": [
+        "https://github.com/alexadmin"
+      ],
+      "platform_role": "PLATFORM_MODERATOR",
+      "account_state": "banned",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "pro",
+      "created_at": "2026-01-02T00:00:00.000Z",
+      "updated_at": "2026-10-29T09:56:22.653Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000003",
+      "email": "mod@devsphere.io",
+      "username": "mira_mod",
+      "display_name": "Mira Moderator",
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "bio": "Platform Moderator maintaining community trust, safety, and kindness.",
+      "links": [],
+      "platform_role": "USER",
+      "account_state": "banned",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "free",
+      "created_at": "2026-01-03T00:00:00.000Z",
+      "updated_at": "2026-10-29T09:55:41.007Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000004",
+      "email": "support@devsphere.io",
+      "username": "sam_support",
+      "display_name": "Sam Support",
+      "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "bio": "DevSphere user assistance & community support.",
+      "links": [],
+      "platform_role": "SUPPORT",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "free",
+      "created_at": "2026-01-04T00:00:00.000Z",
+      "updated_at": "2026-01-04T00:00:00.000Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000005",
+      "email": "pro@devsphere.io",
+      "username": "dev_pro",
+      "display_name": "Nova Developer",
+      "avatar_url": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "bio": "Full stack engineer building high-performance AI tooling & WebAssembly apps.",
+      "links": [
+        "https://twitter.com/dev_pro"
+      ],
+      "platform_role": "PREMIUM_USER",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "pro",
+      "created_at": "2026-01-05T00:00:00.000Z",
+      "updated_at": "2026-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000006",
+      "email": "member@devsphere.io",
+      "username": "sarah_coder",
+      "display_name": "Sarah Coder",
+      "avatar_url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80",
+      "bio": "Open source enthusiast and TypeScript lover. Learning Next.js 15!",
+      "links": [
+        "https://github.com/sarahcoder"
+      ],
+      "platform_role": "USER",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "free",
+      "created_at": "2026-01-06T00:00:00.000Z",
+      "updated_at": "2026-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000007",
+      "email": "jordan@devsphere.io",
+      "username": "jordan_dev",
+      "display_name": "Jordan Dev",
+      "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "bio": "Systems programmer learning Rust and Distributed Systems.",
+      "links": [],
+      "platform_role": "USER",
+      "account_state": "active",
+      "is_verified": false,
+      "is_private": false,
+      "premium_tier": "free",
+      "created_at": "2026-01-07T00:00:00.000Z",
+      "updated_at": "2026-01-07T00:00:00.000Z"
+    },
+    {
+      "id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "email": "joshiayush637f@gmail.com",
+      "username": "dnnwngnndff",
+      "display_name": "jjk",
+      "bio": "Hello, I am using DevSphere!",
+      "links": [],
+      "platform_role": "PREMIUM_USER",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "supreme_dev",
+      "created_at": "2026-10-29T09:38:30.453Z",
+      "updated_at": "2026-10-29T09:40:28.109Z"
+    },
+    {
+      "id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "email": "joshiayush637@gmail.com",
+      "username": "kapish",
+      "display_name": "kapish",
+      "bio": "Hello, I am using DevSphere!",
+      "links": [],
+      "platform_role": "PREMIUM_USER",
+      "account_state": "active",
+      "is_verified": true,
+      "is_private": false,
+      "premium_tier": "supreme_dev",
+      "created_at": "2026-10-31T03:34:12.589Z",
+      "updated_at": "2026-10-31T03:36:09.007Z"
+    }
+  ],
+  "user_settings": [
+    {
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "theme": "dark",
+      "chat_density": "cozy",
+      "direct_message_privacy": "everyone",
+      "friend_request_privacy": "everyone",
+      "sound_enabled": true,
+      "email_notifications": false
+    }
+  ],
+  "user_presence": [
+    {
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "status": "online",
+      "last_seen_at": "2026-10-31T03:35:31.256Z"
+    },
+    {
+      "user_id": "00000000-0000-0000-0000-000000000002",
+      "status": "idle",
+      "last_seen_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "user_id": "00000000-0000-0000-0000-000000000005",
+      "status": "online",
+      "last_seen_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "status": "online",
+      "last_seen_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "user_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "status": "online",
+      "last_seen_at": "2026-10-29T09:38:30.453Z"
+    },
+    {
+      "user_id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "status": "online",
+      "last_seen_at": "2026-10-31T03:34:12.589Z"
+    }
+  ],
+  "follows": [
+    {
+      "follower_id": "00000000-0000-0000-0000-000000000006",
+      "following_id": "00000000-0000-0000-0000-000000000001",
+      "created_at": "2026-01-10T00:00:00.000Z"
+    },
+    {
+      "follower_id": "00000000-0000-0000-0000-000000000005",
+      "following_id": "00000000-0000-0000-0000-000000000001",
+      "created_at": "2026-01-11T00:00:00.000Z"
+    }
+  ],
+  "follow_requests": [],
+  "friendships": [
+    {
+      "user_a_id": "00000000-0000-0000-0000-000000000005",
+      "user_b_id": "00000000-0000-0000-0000-000000000006",
+      "created_at": "2026-01-12T00:00:00.000Z"
+    }
+  ],
+  "friend_requests": [
+    {
+      "id": "fr-1",
+      "sender_id": "00000000-0000-0000-0000-000000000007",
+      "receiver_id": "00000000-0000-0000-0000-000000000006",
+      "status": "pending",
+      "created_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "id": "89abbffb-0718-4cd5-8455-27815b2994ca",
+      "sender_id": "00000000-0000-0000-0000-000000000001",
+      "receiver_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "status": "pending",
+      "created_at": "2026-10-29T09:40:59.527Z"
+    }
+  ],
+  "blocks": [],
+  "mutes": [],
+  "conversations": [
+    {
+      "id": "conv-1",
+      "type": "direct",
+      "created_by": "00000000-0000-0000-0000-000000000006",
+      "created_at": "2026-02-01T00:00:00.000Z",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "conversation_members": [
+    {
+      "conversation_id": "conv-1",
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "group_role": "MEMBER",
+      "joined_at": "2026-02-01T00:00:00.000Z"
+    },
+    {
+      "conversation_id": "conv-1",
+      "user_id": "00000000-0000-0000-0000-000000000005",
+      "group_role": "MEMBER",
+      "joined_at": "2026-02-01T00:00:00.000Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "conversation_id": "conv-1",
+      "sender_id": "00000000-0000-0000-0000-000000000005",
+      "content": "Hey Sarah! Have you checked out the new AI Coding Assistant on DevSphere yet?",
+      "is_pinned": false,
+      "is_edited": false,
+      "is_deleted": false,
+      "created_at": "2026-10-29T07:22:48.506Z",
+      "updated_at": "2026-10-29T07:22:48.506Z"
+    },
+    {
+      "id": "msg-2",
+      "conversation_id": "conv-1",
+      "sender_id": "00000000-0000-0000-0000-000000000006",
+      "content": "Yes! The syntax highlighting and refactoring suggestions are awesome. Here is a TypeScript helper I just generated:\n```typescript\nexport const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));\n```",
+      "is_pinned": false,
+      "is_edited": false,
+      "is_deleted": false,
+      "created_at": "2026-10-29T07:52:48.506Z",
+      "updated_at": "2026-10-29T07:52:48.506Z"
+    },
+    {
+      "id": "msg-3",
+      "channel_id": "30000000-0000-0000-0000-000000000002",
+      "sender_id": "00000000-0000-0000-0000-000000000001",
+      "content": "Welcome everyone to DevSphere HQ! Feel free to ask questions, share projects, and collaborate.",
+      "is_pinned": true,
+      "is_edited": false,
+      "is_deleted": false,
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "message_reactions": [
+    {
+      "message_id": "msg-3",
+      "user_id": "00000000-0000-0000-0000-000000000005",
+      "emoji": "🚀",
+      "created_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "message_id": "msg-3",
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "emoji": "🔥",
+      "created_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "servers": [
+    {
+      "id": "10000000-0000-0000-0000-000000000001",
+      "name": "DevSphere HQ",
+      "description": "The official headquarters for developers, architects, and AI builders.",
+      "icon_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+      "banner_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80",
+      "owner_id": "00000000-0000-0000-0000-000000000001",
+      "is_public": true,
+      "verification_level": "none",
+      "member_count": 7,
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-0000-0000-000000000002",
+      "name": "TypeScript & React Architects",
+      "description": "Deep dive into frontend architecture, design systems, and state management.",
+      "icon_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=150&auto=format&fit=crop&q=80",
+      "owner_id": "00000000-0000-0000-0000-000000000005",
+      "is_public": true,
+      "verification_level": "none",
+      "member_count": 4,
+      "created_at": "2026-01-15T00:00:00.000Z",
+      "updated_at": "2026-01-15T00:00:00.000Z"
+    }
+  ],
+  "server_categories": [
+    {
+      "id": "20000000-0000-0000-0000-000000000001",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "name": "Welcome & Rules",
+      "position": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "20000000-0000-0000-0000-000000000002",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "name": "Community Chat",
+      "position": 1,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "20000000-0000-0000-0000-000000000003",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "name": "Engineering & AI",
+      "position": 2,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "server_channels": [
+    {
+      "id": "30000000-0000-0000-0000-000000000001",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "category_id": "20000000-0000-0000-0000-000000000001",
+      "name": "welcome-and-rules",
+      "type": "announcement",
+      "topic": "Welcome to DevSphere! Read platform rules and get started.",
+      "position": 0,
+      "is_private": false,
+      "slow_mode_seconds": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000002",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "category_id": "20000000-0000-0000-0000-000000000002",
+      "name": "general-chat",
+      "type": "text",
+      "topic": "Casual discussion for all engineers.",
+      "position": 1,
+      "is_private": false,
+      "slow_mode_seconds": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000003",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "category_id": "20000000-0000-0000-0000-000000000003",
+      "name": "ask-ai-coding",
+      "type": "ai-help",
+      "topic": "Discuss coding questions, prompt the AI assistant, and share solutions.",
+      "position": 2,
+      "is_private": false,
+      "slow_mode_seconds": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000004",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "category_id": "20000000-0000-0000-0000-000000000003",
+      "name": "project-showcase",
+      "type": "project",
+      "topic": "Show off what you are building with the community.",
+      "position": 3,
+      "is_private": false,
+      "slow_mode_seconds": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "server_members": [
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "server_role": "SERVER_OWNER",
+      "joined_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "00000000-0000-0000-0000-000000000002",
+      "server_role": "SERVER_ADMIN",
+      "joined_at": "2026-01-02T00:00:00.000Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "00000000-0000-0000-0000-000000000003",
+      "server_role": "SERVER_MODERATOR",
+      "joined_at": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "00000000-0000-0000-0000-000000000005",
+      "server_role": "MEMBER",
+      "joined_at": "2026-01-05T00:00:00.000Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "server_role": "MEMBER",
+      "joined_at": "2026-01-06T00:00:00.000Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "server_role": "MEMBER",
+      "joined_at": "2026-10-29T09:38:30.453Z"
+    },
+    {
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "user_id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "server_role": "MEMBER",
+      "joined_at": "2026-10-31T03:34:12.589Z"
+    }
+  ],
+  "invites": [
+    {
+      "id": "inv-1",
+      "code": "DEVSPHERE",
+      "server_id": "10000000-0000-0000-0000-000000000001",
+      "server_name": "DevSphere HQ",
+      "created_by": "00000000-0000-0000-0000-000000000001",
+      "max_uses": 1000,
+      "uses": 5,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "6765c68c-ad41-4fab-9f90-b7db952a9397",
+      "is_read": false,
+      "created_at": "2026-10-31T03:36:09.009Z",
+      "user_id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "premium_update",
+      "title": "Premium Request Approved!",
+      "content": "Congratulations! Your request for SUPREME_DEV has been approved. Enjoy premium perks.",
+      "link_url": "/premium"
+    },
+    {
+      "id": "c725d3e5-760b-4205-8080-fa9c51cf15e8",
+      "is_read": false,
+      "created_at": "2026-10-31T03:35:04.096Z",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "actor_id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "type": "premium_update",
+      "title": "New Premium Request",
+      "content": "@kapish requested SUPREME_DEV tier.",
+      "link_url": "/supreme"
+    },
+    {
+      "id": "619ee7ea-8c61-4b14-9b8a-5c73e69cb311",
+      "is_read": false,
+      "created_at": "2026-10-29T09:56:22.659Z",
+      "user_id": "00000000-0000-0000-0000-000000000002",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "role_change",
+      "title": "Platform Staff Role Updated",
+      "content": "Your platform role has been updated to PLATFORM_MODERATOR by the Supreme Owner. Rationale: he is a hacker",
+      "link_url": "/moderator"
+    },
+    {
+      "id": "b8782932-47c2-40f2-ba58-ff71c4a0f1d8",
+      "is_read": false,
+      "created_at": "2026-10-29T09:55:41.015Z",
+      "user_id": "00000000-0000-0000-0000-000000000003",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "role_change",
+      "title": "Platform Staff Role Updated",
+      "content": "Your platform role has been updated to USER by the Supreme Owner. Rationale: just like it",
+      "link_url": "/home"
+    },
+    {
+      "id": "387fb111-1e0e-4e3e-89a0-a50cecb529b2",
+      "is_read": false,
+      "created_at": "2026-10-29T09:40:59.527Z",
+      "user_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "friend_request",
+      "title": "New Friend Request",
+      "content": "Supreme Sovereign sent you a friend request.",
+      "link_url": "/home"
+    },
+    {
+      "id": "7824276c-f6d4-4642-bb9e-8b14e358bdb4",
+      "is_read": false,
+      "created_at": "2026-10-29T09:40:28.110Z",
+      "user_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "premium_update",
+      "title": "Premium Request Approved!",
+      "content": "Congratulations! Your request for SUPREME_DEV has been approved. Enjoy premium perks.",
+      "link_url": "/premium"
+    },
+    {
+      "id": "b57dadc3-e4dc-47d6-9c61-8c887a6033ee",
+      "is_read": false,
+      "created_at": "2026-10-29T09:39:08.698Z",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "actor_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "type": "premium_update",
+      "title": "New Premium Request",
+      "content": "@dnnwngnndff requested SUPREME_DEV tier.",
+      "link_url": "/supreme"
+    },
+    {
+      "id": "notif-1",
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "actor_id": "00000000-0000-0000-0000-000000000007",
+      "type": "friend_request",
+      "title": "New Friend Request",
+      "content": "Jordan Dev sent you a friend request.",
+      "link_url": "/home",
+      "is_read": false,
+      "created_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "id": "notif-2",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "actor_id": "00000000-0000-0000-0000-000000000006",
+      "type": "follow",
+      "title": "New Follower",
+      "content": "Sarah Coder started following you.",
+      "link_url": "/profile/sarah_coder",
+      "is_read": false,
+      "created_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "premium_requests": [
+    {
+      "id": "221a8c89-fc40-494d-9dfa-d093aae8f654",
+      "user_id": "7a444d1a-55e6-42d5-8169-676d21eabfc9",
+      "tier_id": "supreme_dev",
+      "status": "approved",
+      "contact_message": "0heiggbifwd",
+      "payment_reference": "",
+      "created_at": "2026-10-31T03:35:04.092Z",
+      "updated_at": "2026-10-31T03:36:09.006Z",
+      "reviewed_by": "00000000-0000-0000-0000-000000000001",
+      "internal_note": "Verified by Supreme Owner"
+    },
+    {
+      "id": "77e3f10b-0960-443b-81ba-7db5d8b6240a",
+      "user_id": "3956eed3-efff-42b8-961c-4bc8d5499c6e",
+      "tier_id": "supreme_dev",
+      "status": "approved",
+      "contact_message": "i just want it ",
+      "payment_reference": "",
+      "created_at": "2026-10-29T09:39:08.696Z",
+      "updated_at": "2026-10-29T09:40:28.108Z",
+      "reviewed_by": "00000000-0000-0000-0000-000000000001",
+      "internal_note": "Verified by Supreme Owner"
+    },
+    {
+      "id": "prem-req-1",
+      "user_id": "00000000-0000-0000-0000-000000000006",
+      "tier_id": "pro",
+      "status": "rejected",
+      "contact_message": "Hi Supreme Owner! I would love to upgrade to Pro to unlock unlimited AI coding and higher upload quotas.",
+      "payment_reference": "TXN-8849204-DEV",
+      "created_at": "2026-10-29T08:22:48.506Z",
+      "updated_at": "2026-10-29T09:35:17.652Z",
+      "reviewed_by": "00000000-0000-0000-0000-000000000001",
+      "internal_note": "Verified by Supreme Owner"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-1",
+      "reporter_id": "00000000-0000-0000-0000-000000000006",
+      "target_type": "user",
+      "target_id": "00000000-0000-0000-0000-000000000007",
+      "reason_category": "spam",
+      "explanation": "Frequent unsolicited message requests.",
+      "status": "pending",
+      "created_at": "2026-10-29T08:22:48.506Z",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "aud-1",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "Supreme Sovereign",
+      "action": "PLATFORM_INITIALIZATION",
+      "target_name": "DevSphere Core",
+      "reason": "Initial system bootstrap",
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "9565a1b2-41f2-4199-b14d-a4ed447b1de6",
+      "created_at": "2026-10-29T09:34:25.115Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "SUPREME_USER_BAN",
+      "target_id": "00000000-0000-0000-0000-000000000002",
+      "target_name": "alex_admin",
+      "reason": "just",
+      "metadata": {
+        "previous": {
+          "id": "00000000-0000-0000-0000-000000000002",
+          "email": "admin@devsphere.io",
+          "username": "alex_admin",
+          "display_name": "Alex Admin",
+          "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+          "bio": "Platform Administrator & Infrastructure Architect.",
+          "links": [
+            "https://github.com/alexadmin"
+          ],
+          "platform_role": "PLATFORM_ADMIN",
+          "account_state": "active",
+          "is_verified": true,
+          "is_private": false,
+          "premium_tier": "pro",
+          "created_at": "2026-01-02T00:00:00.000Z",
+          "updated_at": "2026-01-02T00:00:00.000Z"
+        },
+        "updated": {
+          "account_state": "banned"
+        }
+      }
+    },
+    {
+      "id": "fd0f5ccf-eb4e-4cd5-9326-9453e976206c",
+      "created_at": "2026-10-29T09:34:42.203Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "SUPREME_USER_BAN",
+      "target_id": "00000000-0000-0000-0000-000000000003",
+      "target_name": "mira_mod",
+      "reason": "ban",
+      "metadata": {
+        "previous": {
+          "id": "00000000-0000-0000-0000-000000000003",
+          "email": "mod@devsphere.io",
+          "username": "mira_mod",
+          "display_name": "Mira Moderator",
+          "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+          "bio": "Platform Moderator maintaining community trust, safety, and kindness.",
+          "links": [],
+          "platform_role": "PLATFORM_MODERATOR",
+          "account_state": "active",
+          "is_verified": true,
+          "is_private": false,
+          "premium_tier": "free",
+          "created_at": "2026-01-03T00:00:00.000Z",
+          "updated_at": "2026-01-03T00:00:00.000Z"
+        },
+        "updated": {
+          "account_state": "banned"
+        }
+      }
+    },
+    {
+      "id": "bc301c72-d640-4a5f-9978-d4ec1dbead74",
+      "created_at": "2026-10-29T09:35:17.654Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "PREMIUM_REQUEST_REJECTED",
+      "target_id": "prem-req-1",
+      "reason": "Verified by Supreme Owner"
+    },
+    {
+      "id": "ede06a9a-552d-4bb2-9c23-7d6dc98685d6",
+      "created_at": "2026-10-29T09:40:28.118Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "PREMIUM_REQUEST_APPROVED",
+      "target_id": "77e3f10b-0960-443b-81ba-7db5d8b6240a",
+      "reason": "Verified by Supreme Owner"
+    },
+    {
+      "id": "8229f125-070d-47aa-bd01-10b5b7bb69e6",
+      "created_at": "2026-10-29T09:55:41.013Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "PLATFORM_ROLE_DELEGATION",
+      "target_id": "00000000-0000-0000-0000-000000000003",
+      "target_name": "mira_mod",
+      "reason": "just like it",
+      "metadata": {
+        "previousRole": "PLATFORM_MODERATOR",
+        "newRole": "USER"
+      }
+    },
+    {
+      "id": "990092fb-1d68-4971-85d5-e459815f967c",
+      "created_at": "2026-10-29T09:56:22.656Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "PLATFORM_ROLE_DELEGATION",
+      "target_id": "00000000-0000-0000-0000-000000000002",
+      "target_name": "alex_admin",
+      "reason": "he is a hacker",
+      "metadata": {
+        "previousRole": "PLATFORM_ADMIN",
+        "newRole": "PLATFORM_MODERATOR"
+      }
+    },
+    {
+      "id": "f7947069-884c-4059-945b-4ba385e03226",
+      "created_at": "2026-10-31T03:36:09.018Z",
+      "actor_id": "00000000-0000-0000-0000-000000000001",
+      "actor_name": "supreme",
+      "action": "PREMIUM_REQUEST_APPROVED",
+      "target_id": "221a8c89-fc40-494d-9dfa-d093aae8f654",
+      "reason": "Verified by Supreme Owner"
+    }
+  ],
+  "feature_flags": [
+    {
+      "key": "registrations_open",
+      "enabled": true,
+      "description": "Allow new user registrations",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "key": "maintenance_mode",
+      "enabled": false,
+      "description": "Emergency read-only platform mode",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "key": "ai_coding_assistant",
+      "enabled": true,
+      "description": "Server-side Gemini AI coding integration",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "key": "premium_requests_open",
+      "enabled": true,
+      "description": "Allow users to submit premium requests",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "key": "file_uploads_enabled",
+      "enabled": true,
+      "description": "Allow file attachments in DMs and channels",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "ai_conversations": [
+    {
+      "id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "title": "Session #2",
+      "model": "gemini-1.5-flash",
+      "created_at": "2026-10-29T08:35:02.564Z",
+      "updated_at": "2026-10-29T08:35:02.564Z"
+    },
+    {
+      "id": "ai-conv-1",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "title": "Optimizing Next.js 15 Server Components",
+      "model": "gemini-1.5-flash",
+      "created_at": "2026-10-29T08:22:48.506Z",
+      "updated_at": "2026-10-29T08:22:48.506Z"
+    }
+  ],
+  "ai_messages": [
+    {
+      "id": "ai-msg-1",
+      "conversation_id": "ai-conv-1",
+      "role": "user",
+      "content": "What are the key performance patterns for caching and streaming in Next.js 15?",
+      "created_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "id": "ai-msg-2",
+      "conversation_id": "ai-conv-1",
+      "role": "assistant",
+      "content": "In Next.js 15, key architectural considerations include:\n\n1. **Uncached by Default**: `fetch` requests and route handlers are now uncached by default. Opt in explicitly with `cache: 'force-cache'`.\n2. **React 19 Actions**: Form submissions and mutations can use `useActionState` and Server Actions directly.\n3. **Suspense Boundaries**: Wrap async Server Components with fine-grained `<Suspense fallback={<Skeleton />}>` to unlock progressive HTML streaming.",
+      "created_at": "2026-10-29T08:22:48.506Z"
+    },
+    {
+      "id": "5fd6f125-ab83-4942-801b-b83a18368267",
+      "conversation_id": "ai-conv-1",
+      "role": "user",
+      "content": "hello",
+      "created_at": "2026-10-29T08:34:27.267Z"
+    },
+    {
+      "id": "c924bdb4-1e96-461a-a7f5-5cec4633076b",
+      "conversation_id": "ai-conv-1",
+      "role": "assistant",
+      "content": "Here is a complete solution tailored for your request:\n\n```typescript\n/**\n * DevSphere Utility: High-speed async task runner with retry and exponential backoff\n */\nexport async function executeWithRetry<T>(\n  task: () => Promise<T>,\n  retries = 3,\n  delayMs = 1000\n): Promise<T> {\n  try {\n    return await task();\n  } catch (error) {\n    if (retries <= 0) throw error;\n    console.warn(`Retrying task in ${delayMs}ms. Attempts left: ${retries}`);\n    await new Promise((resolve) => setTimeout(resolve, delayMs));\n    return executeWithRetry(task, retries - 1, delayMs * 2);\n  }\n}\n```\n\nYou can import and use this across your Next.js server actions or API endpoints for resilient third-party integrations!",
+      "created_at": "2026-10-29T08:34:29.499Z"
+    },
+    {
+      "id": "c6bb6ff9-f999-420a-8149-b6a4b0640e68",
+      "conversation_id": "ai-conv-1",
+      "role": "user",
+      "content": "heoloolo",
+      "created_at": "2026-10-29T08:34:57.285Z"
+    },
+    {
+      "id": "d6704500-4437-49be-9270-f4cfc29a67cb",
+      "conversation_id": "ai-conv-1",
+      "role": "assistant",
+      "content": "Here is a complete solution tailored for your request:\n\n```typescript\n/**\n * DevSphere Utility: High-speed async task runner with retry and exponential backoff\n */\nexport async function executeWithRetry<T>(\n  task: () => Promise<T>,\n  retries = 3,\n  delayMs = 1000\n): Promise<T> {\n  try {\n    return await task();\n  } catch (error) {\n    if (retries <= 0) throw error;\n    console.warn(`Retrying task in ${delayMs}ms. Attempts left: ${retries}`);\n    await new Promise((resolve) => setTimeout(resolve, delayMs));\n    return executeWithRetry(task, retries - 1, delayMs * 2);\n  }\n}\n```\n\nYou can import and use this across your Next.js server actions or API endpoints for resilient third-party integrations!",
+      "created_at": "2026-10-29T08:34:57.899Z"
+    },
+    {
+      "id": "9f762415-8613-48fb-bf98-d4d8209d48a6",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "hi",
+      "created_at": "2026-10-29T08:35:09.487Z"
+    },
+    {
+      "id": "0f315f29-4485-4e59-9571-663bb2ba4ca4",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "Here is a complete solution tailored for your request:\n\n```typescript\n/**\n * DevSphere Utility: High-speed async task runner with retry and exponential backoff\n */\nexport async function executeWithRetry<T>(\n  task: () => Promise<T>,\n  retries = 3,\n  delayMs = 1000\n): Promise<T> {\n  try {\n    return await task();\n  } catch (error) {\n    if (retries <= 0) throw error;\n    console.warn(`Retrying task in ${delayMs}ms. Attempts left: ${retries}`);\n    await new Promise((resolve) => setTimeout(resolve, delayMs));\n    return executeWithRetry(task, retries - 1, delayMs * 2);\n  }\n}\n```\n\nYou can import and use this across your Next.js server actions or API endpoints for resilient third-party integrations!",
+      "created_at": "2026-10-29T08:35:10.030Z"
+    },
+    {
+      "id": "6b53dd2b-5642-4647-b054-b2ce147cb2e0",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "hi",
+      "created_at": "2026-10-29T09:29:32.753Z"
+    },
+    {
+      "id": "2d2335ff-9808-4513-8327-45fc84d85531",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "Hello again! Ready to build something awesome. \n\nWhat stack or feature are we tackling today? Whether it's setting up Server Actions in Next.js 15, designing a Supabase database schema, or optimizing a backend service, just let me know what you need!",
+      "created_at": "2026-10-29T09:29:50.840Z"
+    },
+    {
+      "id": "60a36451-8bb5-4007-ab21-8b67dcd5c7a5",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "are u gemenini",
+      "created_at": "2026-10-29T09:30:01.921Z"
+    },
+    {
+      "id": "d03aa61e-698d-4ade-8eb0-f9aaaab88c43",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "No, I am not Gemini. I am **DevSphere AI**, a world-class senior software engineer and autonomous coding assistant. \n\nI specialize in modern web development (Next.js 15, React 19, TypeScript, Tailwind CSS), robust backend systems (PostgreSQL, Supabase, Node.js, Go, Rust), and high-performance system design. \n\nHow can I help you engineer something great today?",
+      "created_at": "2026-10-29T09:30:07.784Z"
+    },
+    {
+      "id": "14d44a2d-e760-4843-ac43-ec653cb2c913",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "do u use api",
+      "created_at": "2026-10-29T09:30:43.220Z"
+    },
+    {
+      "id": "819f8a4e-74cb-4c28-8f94-0657072f9eb4",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "Yes! Depending on how you mean:\n\n1. **APIs in code:** I write, consume, and integrate APIs all the time—whether it's REST, GraphQL, WebSockets, tRPC, or Next.js 15 Server Actions and Route Handlers.\n2. **My platform:** I run through an API interface provided by my host system, allowing me to process your prompts and stream back code and architectural solutions.\n\nAre you looking to build or integrate an API into your project? Let me know what you're working on and we can get it coded!",
+      "created_at": "2026-10-29T09:30:47.106Z"
+    },
+    {
+      "id": "694387eb-3b8e-40ef-858c-bf846fecda69",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "hi",
+      "created_at": "2026-10-31T03:28:44.375Z"
+    },
+    {
+      "id": "7916a588-414a-4b8b-b659-5fd28d8c82ad",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "Hello again! 👋 \n\nWhat's on your mind today? Are we writing some code, debugging an issue, or architecting a new system? Let me know what you need!",
+      "created_at": "2026-10-31T03:28:46.545Z"
+    },
+    {
+      "id": "3de56b2e-ae96-44f3-92bc-1c3c364ed38e",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "how r u",
+      "created_at": "2026-10-31T03:28:52.943Z"
+    },
+    {
+      "id": "3a8ed8f8-2607-48f1-8e8f-2fc5fb8ea6c3",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "I'm doing great, thank you for asking! Systems are fully operational and I'm ready to write some clean, production-ready code. \n\nHow are you doing today? What are we building or debugging?",
+      "created_at": "2026-10-31T03:28:54.706Z"
+    },
+    {
+      "id": "b5700333-1da3-4f5b-9147-841353142f26",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "hi ",
+      "created_at": "2026-10-31T03:30:12.495Z"
+    },
+    {
+      "id": "a957d960-b4ed-4d4e-8df2-634d24c7a53d",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "Hi hi! 👋 \n\nLooks like you're just testing the connection. Everything's running smoothly over here. \n\nWhenever you're ready to dive into some code, architecture, or debugging, just let me know what we're working on!",
+      "created_at": "2026-10-31T03:30:14.150Z"
+    },
+    {
+      "id": "77f53e4a-c5db-44d5-81f6-ce5b590e1041",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "user",
+      "content": "who r u",
+      "created_at": "2026-10-31T03:37:15.290Z"
+    },
+    {
+      "id": "aa185525-bd28-4ee9-9b13-5e5f35462726",
+      "conversation_id": "5376cb6b-152e-404e-bcb4-ffe142d0eeaa",
+      "role": "assistant",
+      "content": "I am **DevSphere AI**—your world-class senior software engineer and autonomous coding assistant. \n\nI specialize in:\n* **Frontend:** Next.js 15, React 19, TypeScript, Tailwind CSS\n* **Backend & Databases:** PostgreSQL, Supabase, Node.js, Go, Rust\n* **Architecture:** System design, API integrations, debugging, and high-performance refactoring\n\nWhat can I build or fix for you today?",
+      "created_at": "2026-10-31T03:37:16.952Z"
+    }
+  ],
+  "ai_usage": []
+}

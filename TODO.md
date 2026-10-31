@@ -1,0 +1,73 @@
+# DevSphere Task & Milestone Tracker
+
+---
+
+- [x] **Milestone 1: Project Scaffold & Design System**
+  - [x] Initialize Next.js 15+ App Router, TypeScript, Tailwind CSS
+  - [x] Setup Lucide icons, theme provider (Dark/Light/Obsidian), toast provider
+  - [x] Build desktop multi-column shell & mobile bottom-bar navigation
+- [x] **Milestone 2: Database Layer, Supabase SQL Migrations & Data Access Layer**
+  - [x] Write `supabase/migrations/00001_initial_schema.sql` (44 tables)
+  - [x] Write `supabase/migrations/00002_rls_policies.sql` (Strict RLS rules)
+  - [x] Write `supabase/migrations/00003_seed_data.sql` (Initial demo dataset)
+  - [x] Implement portable DAL storage adapter (Postgres/Supabase + local persistent DAL)
+- [x] **Milestone 3: Authentication & Account Lifecycle**
+  - [x] User registration with unique username check & bcrypt hashing
+  - [x] Login & session management via HttpOnly signed JWT cookies
+  - [x] Logout and session invalidation
+  - [x] Re-authentication verification for Supreme and Admin operations
+  - [x] Account state restrictions (active, suspended, banned)
+- [x] **Milestone 4: Profiles, Social Graph & Presence**
+  - [x] Profile viewer & editor (`/profile/[username]`)
+  - [x] Instagram-style Follow/Unfollow, private account follow requests
+  - [x] Mutual Friends system (Send, Accept, Reject, Cancel, Unfriend)
+  - [x] Block, Mute, Restrict controls
+  - [x] Real-time presence state (online, idle, dnd, offline)
+- [x] **Milestone 5: Direct Messaging & Real-Time Chat Engine**
+  - [x] 1-on-1 DM creation & chat view
+  - [x] Real-time event streaming via Server-Sent Events (SSE)
+  - [x] Rich messages (Markdown, Code blocks, Reactions, Replies, Edits, Deletes)
+  - [x] Typing indicators and unread indicators
+- [x] **Milestone 6: Group Chats & Community Servers**
+  - [x] Group chats (Creation, Member management, Roles, Pinned messages)
+  - [x] Community servers (Creation, Channels, Categories, Topics)
+  - [x] Server role hierarchy & permission override resolution
+  - [x] Server invite codes with expiration and max uses
+- [x] **Milestone 7: AI Coding Assistant**
+  - [x] Dedicated AI Studio (`/ai`) with multi-turn chat & prompt templates
+  - [x] Server-side Google Gemini API integration with streaming & safety
+  - [x] Syntax-highlighted code blocks with language badge and Copy button
+  - [x] Daily user token quota tracking & limits
+- [x] **Milestone 8: Premium Subscriptions & Contact-to-Purchase Workflow**
+  - [x] Dedicated `/premium` showcase page with tier comparison
+  - [x] "Contact Supreme / Request Premium" submission flow
+  - [x] Request lifecycle (`pending` -> `contacted` -> `awaiting_verification` -> `approved`/`rejected`)
+  - [x] Manual approval & tier granting in Supreme/Admin panel
+- [x] **Milestone 9: Supreme Panel, Admin Panel & Moderator Panel**
+  - [x] Protected `/supreme` panel for Supreme Owner
+  - [x] Platform statistics, metrics, and health overview
+  - [x] Platform staff delegation (Admin, Mod, Support) with immutable Supreme protections
+  - [x] Global feature flags & configurable platform limits
+  - [x] Protected `/admin` and `/moderator` panels with scoped permissions
+- [x] **Milestone 10: Notifications, Global Search & Discovery Directory**
+  - [x] In-app notification center with real-time updates
+  - [x] Global search across users, public servers, and channels
+  - [x] Public community discovery directory with category filters
+- [x] **Milestone 11: File & Media Storage Engine**
+  - [x] Secure upload API with MIME validation and size quotas
+  - [x] Avatar and banner uploads
+  - [x] Chat attachments with image previews and code file viewer
+- [x] **Milestone 12: Moderation, Reporting, Appeals & Audit Logging**
+  - [x] Report user/message/server/group flow
+  - [x] User appeals submission and review
+  - [x] Immutable audit log recording for privileged operations
+- [x] **Milestone 13: Seed Data & Supreme Bootstrap**
+  - [x] Pre-configured demo accounts for all roles
+  - [x] Supreme Owner bootstrap script via `SUPREME_OWNER_EMAIL`
+- [x] **Milestone 14: Automated Tests Suite**
+  - [x] Unit & integration tests for Auth, Permissions, Social Graph, AI Quota
+  - [x] Privilege escalation verification tests
+- [x] **Milestone 15: Production Build, Verification & Documentation**
+  - [x] Typecheck & production build (`npm run build`)
+  - [x] README.md, .env.example, deployment guides
+  - [x] FINAL_STATUS.md comprehensive completion report

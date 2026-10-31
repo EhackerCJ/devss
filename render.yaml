@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: devsphere-web
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SUPREME_OWNER_EMAIL
+        value: supreme@devsphere.io
+      - key: GEMINI_API_KEY
+  sync: false
+    disk:
+      name: devsphere-data
+      mountPath: /app/data
+      sizeGB: 10

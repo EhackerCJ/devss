@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+  # ----------------------------------------------------------------------------
+  # DevSphere Full-Stack Application (Next.js 15 App Router Frontend + Backend)
+  # ----------------------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devsphere-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      - JWT_SECRET=${JWT_SECRET:-devsphere-supreme-production-secret-key-32-chars!}
+      - SUPREME_OWNER_EMAIL=${SUPREME_OWNER_EMAIL:-supreme@devsphere.io}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-AQ.Ab8RN6IfbuFgcdR_6AjDLaDGnq0ArnzcpP-2Z3LGcU__PDHkDw}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-devsphere}:${POSTGRES_PASSWORD:-devsphere_secure_pass_2026}@db:5432/${POSTGRES_DB:-devsphere}
+    volumes:
+      - app_data:/app/data
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # ----------------------------------------------------------------------------
+  # PostgreSQL Database (with automated migration execution on startup)
+  # ----------------------------------------------------------------------------
+  db:
+    image: postgres:16-alpine
+    container_name: devsphere-db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-devsphere}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-devsphere_secure_pass_2026}
+      POSTGRES_DB: ${POSTGRES_DB:-devsphere}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # Automated schema & RLS migrations on initial container creation
+      - ./supabase/migrations/00001_initial_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./supabase/migrations/00002_rls_policies.sql:/docker-entrypoint-initdb.d/02_rls.sql:ro
+      - ./supabase/migrations/00003_seed_data.sql:/docker-entrypoint-initdb.d/03_seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-devsphere} -d ${POSTGRES_DB:-devsphere}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  app_data:
+    driver: local
+  postgres_data:
+    driver: local
