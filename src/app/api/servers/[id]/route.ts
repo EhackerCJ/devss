@@ -18,8 +18,8 @@ export async function GET(
 
     // Check if current user is a member
     const session = await getSessionFromRequest(req);
-    const isMember = session ? members.some((m) => m.user_id === session.userId) : false;
-    const currentMember = session ? members.find((m) => m.user_id === session.userId) : null;
+    const isMember = session ? members.some((m: any) => m.user_id === session.userId) : false;
+    const currentMember = session ? members.find((m: any) => m.user_id === session.userId) : null;
 
     return NextResponse.json({
       server,

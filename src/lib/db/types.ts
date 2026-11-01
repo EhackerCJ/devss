@@ -27,6 +27,7 @@ import type {
 
 export interface DatabaseState {
   profiles: UserProfile[];
+  user_passwords?: Record<string, string>;
   user_settings: UserSettings[];
   user_presence: UserPresence[];
   follows: Follow[];

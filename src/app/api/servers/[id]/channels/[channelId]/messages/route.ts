@@ -44,7 +44,7 @@ export async function POST(
 
     // Verify membership
     const members = await db.getServerMembers(serverId);
-    const isMember = members.some((m) => m.user_id === session.userId);
+    const isMember = members.some((m: any) => m.user_id === session.userId);
     if (!isMember) {
       return NextResponse.json({ error: "You must be a member of this server to post messages." }, { status: 403 });
     }

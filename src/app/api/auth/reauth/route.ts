@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Password is required for re-authentication" }, { status: 400 });
     }
 
-    const hash = db.getPasswordHash(session.userId);
+    const hash = await db.getPasswordHash(session.userId);
     if (!hash) {
       return NextResponse.json({ error: "Authentication failed" }, { status: 401 });
     }

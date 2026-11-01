@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Verify password
-    const hash = db.getPasswordHash(user.id);
+    const hash = await db.getPasswordHash(user.id);
     if (!hash) {
       return NextResponse.json(
         { error: "Invalid email/username or password." },

@@ -18,7 +18,7 @@ services:
       - HOSTNAME=0.0.0.0
       - JWT_SECRET=${JWT_SECRET:-devsphere-supreme-production-secret-key-32-chars!}
       - SUPREME_OWNER_EMAIL=${SUPREME_OWNER_EMAIL:-supreme@devsphere.io}
-      - GEMINI_API_KEY=${GEMINI_API_KEY:-AQ.Ab8RN6IfbuFgcdR_6AjDLaDGnq0ArnzcpP-2Z3LGcU__PDHkDw}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
       - DATABASE_URL=postgresql://${POSTGRES_USER:-devsphere}:${POSTGRES_PASSWORD:-devsphere_secure_pass_2026}@db:5432/${POSTGRES_DB:-devsphere}
     volumes:
       - app_data:/app/data

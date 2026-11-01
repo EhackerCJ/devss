@@ -26,7 +26,7 @@ const DATA_DIR =
   (process.env.VERCEL ? path.join("/tmp", "devsphere-data") : path.join(process.cwd(), "data"));
 const STORE_PATH = path.join(DATA_DIR, "devsphere-store.json");
 
-class DatabaseAdapter {
+export class DatabaseAdapter {
   private state: DatabaseState;
   private isLoaded = false;
   private userPasswords: Map<string, string> = new Map();
@@ -47,6 +47,13 @@ class DatabaseAdapter {
         const raw = fs.readFileSync(STORE_PATH, "utf-8");
         const parsed = JSON.parse(raw);
         this.state = { ...getInitialDatabaseState(), ...parsed };
+        if (parsed.user_passwords && typeof parsed.user_passwords === "object") {
+          for (const [id, hash] of Object.entries(parsed.user_passwords)) {
+            if (typeof hash === "string") {
+              this.userPasswords.set(id, hash);
+            }
+          }
+        }
       } else {
         this.saveToDisk();
       }
@@ -62,25 +69,30 @@ class DatabaseAdapter {
       if (!fs.existsSync(DATA_DIR)) {
         fs.mkdirSync(DATA_DIR, { recursive: true });
       }
-      fs.writeFileSync(STORE_PATH, JSON.stringify(this.state, null, 2), "utf-8");
+      const dataToSave = {
+        ...this.state,
+        user_passwords: Object.fromEntries(this.userPasswords),
+      };
+      fs.writeFileSync(STORE_PATH, JSON.stringify(dataToSave, null, 2), "utf-8");
     } catch {
       // In-memory operation remains active
     }
   }
 
   // --- Password Management (Separate from public profiles) ---
-  public getPasswordHash(userId: string): string | undefined {
+  public async getPasswordHash(userId: string): Promise<string | undefined> {
     const hash = this.userPasswords.get(userId);
     if (hash) return hash;
     const user = this.state.profiles.find((p) => p.id === userId);
     if (user && INITIAL_ACCOUNT_HASHES[user.email]) {
       return INITIAL_ACCOUNT_HASHES[user.email];
     }
-    return INITIAL_ACCOUNT_HASHES["member@devsphere.io"];
+    return undefined;
   }
 
-  public setPasswordHash(userId: string, hash: string): void {
+  public async setPasswordHash(userId: string, hash: string): Promise<void> {
     this.userPasswords.set(userId, hash);
+    this.saveToDisk();
   }
 
   // --- Users & Profiles ---
