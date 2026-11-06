@@ -782,7 +782,7 @@ export default function SupremePanelPage() {
           )}
           <Input
             type="password"
-            placeholder="Supreme Password (Supreme#Sovereign$2026!Key)"
+            placeholder="Supreme password"
             value={reauthPassword}
             onChange={(e) => setReauthPassword(e.target.value)}
             required

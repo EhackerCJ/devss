@@ -7,10 +7,10 @@ const JWT_SECRET = new TextEncoder().encode("devsphere-supreme-super-secret-key-
 
 test("Authentication: Distinct password hashing & multi-tier role verification", async () => {
   const credentials = {
-    supreme: "Supreme#Sovereign$2026!Key",
-    admin: "Admin#Vault&9821*Shield",
-    mod: "Mod#SafeGuard%4172!Trust",
-    member: "Member#Sarah@2026!Code",
+    supreme: "supreme-test-password",
+    admin: "admin-test-password",
+    mod: "moderator-test-password",
+    member: "member-test-password",
   };
 
   const hashes = {};

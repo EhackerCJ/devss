@@ -33,10 +33,11 @@ export class DatabaseAdapter {
 
   constructor() {
     this.state = getInitialDatabaseState();
-    // Distinct secure password hash for each account
     for (const p of this.state.profiles) {
-      const hash = INITIAL_ACCOUNT_HASHES[p.email] || INITIAL_ACCOUNT_HASHES["member@devsphere.io"];
-      this.userPasswords.set(p.id, hash);
+      const hash = INITIAL_ACCOUNT_HASHES[p.email];
+      if (hash) {
+        this.userPasswords.set(p.id, hash);
+      }
     }
     this.loadFromDisk();
   }

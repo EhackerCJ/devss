@@ -1,28 +1,26 @@
 import type { DatabaseState } from "./types";
 import bcrypt from "bcryptjs";
 
-// Distinct, high-security passwords for each administrative and member tier
-export const INITIAL_ACCOUNT_PASSWORDS: Record<string, string> = {
-  "supreme@devsphere.io": "Supreme#Sovereign$2026!Key",
-  "admin@devsphere.io": "Admin#Vault&9821*Shield",
-  "mod@devsphere.io": "Mod#SafeGuard%4172!Trust",
-  "support@devsphere.io": "Support#Desk&6319@Assist",
-  "pro@devsphere.io": "DevPro#Coding$7824!Nova",
-  "member@devsphere.io": "Member#Sarah@2026!Code",
-  "jordan@devsphere.io": "Member#Jordan@2026!Dev",
+const DEMO_PASSWORD_VARIABLES: Record<string, string> = {
+  "supreme@devsphere.io": "SUPREME_DEMO_PASSWORD",
+  "admin@devsphere.io": "ADMIN_DEMO_PASSWORD",
+  "mod@devsphere.io": "MODERATOR_DEMO_PASSWORD",
+  "support@devsphere.io": "SUPPORT_DEMO_PASSWORD",
+  "pro@devsphere.io": "PRO_DEMO_PASSWORD",
+  "member@devsphere.io": "MEMBER_DEMO_PASSWORD",
+  "jordan@devsphere.io": "JORDAN_DEMO_PASSWORD",
 };
 
-export const INITIAL_ACCOUNT_HASHES: Record<string, string> = {
-  "supreme@devsphere.io": bcrypt.hashSync("Supreme#Sovereign$2026!Key", 10),
-  "admin@devsphere.io": bcrypt.hashSync("Admin#Vault&9821*Shield", 10),
-  "mod@devsphere.io": bcrypt.hashSync("Mod#SafeGuard%4172!Trust", 10),
-  "support@devsphere.io": bcrypt.hashSync("Support#Desk&6319@Assist", 10),
-  "pro@devsphere.io": bcrypt.hashSync("DevPro#Coding$7824!Nova", 10),
-  "member@devsphere.io": bcrypt.hashSync("Member#Sarah@2026!Code", 10),
-  "jordan@devsphere.io": bcrypt.hashSync("Member#Jordan@2026!Dev", 10),
-};
+export const INITIAL_ACCOUNT_HASHES: Record<string, string> = Object.fromEntries(
+  Object.entries(DEMO_PASSWORD_VARIABLES)
+    .map(([email, variable]) => {
+      const password = process.env[variable];
+      return password ? [email, bcrypt.hashSync(password, 10)] : null;
+    })
+    .filter((entry): entry is [string, string] => entry !== null)
+);
 
-const DEFAULT_PASSWORD_HASH = INITIAL_ACCOUNT_HASHES["member@devsphere.io"];
+const DEFAULT_PASSWORD_HASH = INITIAL_ACCOUNT_HASHES["member@devsphere.io"] || "";
 
 export function getInitialDatabaseState(): DatabaseState {
   return {

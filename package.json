@@ -9,7 +9,8 @@
     "lint": "next lint",
     "test": "npx tsx --test tests/*.test.mjs",
     "seed": "node scripts/seed.mjs",
-    "migrate": "node scripts/migrate-postgres.mjs"
+    "migrate": "node scripts/migrate-postgres.mjs",
+    "reset-demo-passwords": "node scripts/reset-demo-passwords.mjs"
   },
   "dependencies": {
     "@types/pg": "^8.23.1",

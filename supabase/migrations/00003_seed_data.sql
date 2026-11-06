@@ -1,9 +1,5 @@
 -- =====================================================================
 -- DevSphere Seed Fixture Migration 00003
--- Demo accounts password: Password123!
--- Bcrypt hash ($2a$10$e.w6eB9sH1Xz5.uA30D.xOFV5F5mO0iZJ1iN2Gz1eM.N0yQo4iP.G or standard $2b$10$u...):
--- Let's use standard bcrypt hash for "Password123!":
--- $2b$10$wE99qFvdXp052v0zPZfK/.eG2.z6qgDqf5QnE7nZ3K7V052v0zPZf
 -- =====================================================================
 
 INSERT INTO profiles (id, email, password_hash, username, display_name, platform_role, account_state, is_verified, premium_tier, bio)
